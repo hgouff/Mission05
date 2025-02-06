@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Calculations";
+}
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1 class="display-4">Lesson Prices:</h1>
+    </head>
+    <body>
+    <div>
+        @* labels and input boxes with ID's to access in js file *@
+        <form>
+            <label for="Hours">Enter hours needed:</label>
+            <br/>
+            <input id="Hours" type="number" min="1" step="any" required/>
+            <br/>
+            <label for="chargePerHour">Charge per Hour:</label>
+            <br/>
+            <input id="chargePerHour" type="text" value="$20" readonly />
+            <br/>
+            <br/>
+            <input type="submit" value="Calculate Price" id="btnSubmit"/>
+            <br/>
+            <label>Total:</label>
+            <br />
+            <output id="total">0</output>
+
+
+        </form>
+
+
+    </div>
+    </body>
+</html>
